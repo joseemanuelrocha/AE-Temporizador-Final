@@ -1,0 +1,5 @@
+import type { Metadata, Viewport } from 'next';
+import './globals.css';
+export const metadata: Metadata = { metadataBase: new URL('https://aae-temporizador-trampolins.mythic-haven-7919.chatgpt.site'), title: 'AAE · Temporizador de Trampolins', description: 'Temporizador intervalado para os treinos de Ginástica de Trampolins da Associação Académica de Espinho.', manifest: '/manifest.webmanifest', appleWebApp: { capable: true, statusBarStyle: 'black-translucent', title: 'AAE Timer' }, icons: { icon: '/brand/logo-aae.png', apple: '/brand/logo-aae.png' }, openGraph: { title: 'AAE · Temporizador de Trampolins', description: 'Treino com ritmo. Precisão à distância.', images: ['/og.png'], type: 'website' }, twitter: { card: 'summary_large_image', title: 'AAE · Temporizador de Trampolins', description: 'Treino com ritmo. Precisão à distância.', images: ['/og.png'] } };
+export const viewport: Viewport = { themeColor: '#0B0B0B', width: 'device-width', initialScale: 1, viewportFit: 'cover' };
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) { return <html lang="pt"><body>{children}</body></html>; }
