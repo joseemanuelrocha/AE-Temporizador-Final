@@ -850,9 +850,9 @@ export default function Home() {
             onChange={(event) => setTimerBgColor(event.target.value)}
           />
         </label>
-        <img
+          <img
           className="trampoline-logo"
-          src="/brand/logo-trampolins.png"
+          src="/brand/logo-trampolins-transparent.png"
           alt="Secção de Trampolins da AAE"
         />
         <div className="top-actions">
@@ -1025,7 +1025,7 @@ export default function Home() {
         <section className="timer-stage" aria-live="polite">
           {phase === 'CONCLUÍDO' ? (
             <div className="completion-screen">
-              <img src="/brand/logo-trampolins.png" alt="Trampolins AAE" />
+              <img src="/brand/logo-trampolins-transparent.png" alt="Trampolins AAE" />
               <strong>TREINO CONCLUÍDO</strong>
               <span>
                 {totalUnits} {mode === 'intervalos' ? 'SÉRIES' : 'ESTAÇÕES'}{' '}
